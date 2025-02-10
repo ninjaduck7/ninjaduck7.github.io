@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>math meme</title>
-      <link href="/2025/02/10/math-meme/"/>
-      <url>/2025/02/10/math-meme/</url>
+      <title>CS meme</title>
+      <link href="/2025/02/10/cs-meme/"/>
+      <url>/2025/02/10/cs-meme/</url>
       
-        <content type="html"><![CDATA[<h1 id="Meme-Image"><a href="#Meme-Image" class="headerlink" title="Meme Image"></a>Meme Image</h1><p>Funny memes</p><h2 id="Probability-theory"><a href="#Probability-theory" class="headerlink" title="Probability theory"></a>Probability theory</h2><p>Relationships after learning probs </p><p><img src="/images/prob.png" alt="Funny Meme"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Meme-Image"><a href="#Meme-Image" class="headerlink" title="Meme Image"></a>Meme Image</h1><p>Funny memes</p><hr><p><img src="/images/meme/cat.png" alt="Cat Meme"></p><hr><p><img src="/images/meme/everything.png" alt="Everything Meme"></p><hr><p><img src="/images/meme/firefox1.png" alt="Firefox Meme 1"></p><hr><p><img src="/images/meme/firefox2.png" alt="Firefox Meme 2"></p><hr><p>Enjoy these memes!</p>]]></content>
       
       
       <categories>
@@ -21,6 +21,35 @@
         <tags>
             
             <tag> fun </tag>
+            
+            <tag> cs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Math meme</title>
+      <link href="/2025/02/10/math-meme/"/>
+      <url>/2025/02/10/math-meme/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Meme-Image"><a href="#Meme-Image" class="headerlink" title="Meme Image"></a>Meme Image</h1><p>Funny memes</p><h2 id="Probability-theory"><a href="#Probability-theory" class="headerlink" title="Probability theory"></a>Probability theory</h2><p>Relationships after learning probs </p><p><img src="/images/meme/prob.png" alt="Funny Meme"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> meme </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> fun </tag>
+            
+            <tag> math </tag>
             
         </tags>
       
