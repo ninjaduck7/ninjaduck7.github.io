@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Local Quantum Annealing (LQA) 算法介绍Local Quantum Annealing (LQA) 是一种经典算法，受量子退火技术启发，用于解决组合优化问题。该方法专门针对 二次无约束二进制优化 (QUBO) 问题，这类问题因其寻找最优解的复杂性而广受关注。与传统的量子退火不同，LQA采用经典的基于梯度的优化方法，以更具计算可行性的方式找到问题的解。 关键概念二次无约束">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2025/01/17/hello-world/index.html">
+<meta property="og:title" content="Local quantum annealing">
+<meta property="og:url" content="http://example.com/2025/02/10/lqa/index.html">
 <meta property="og:site_name" content="Felix&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Local Quantum Annealing (LQA) 算法介绍Local Quantum Annealing (LQA) 是一种经典算法，受量子退火技术启发，用于解决组合优化问题。该方法专门针对 二次无约束二进制优化 (QUBO) 问题，这类问题因其寻找最优解的复杂性而广受关注。与传统的量子退火不同，LQA采用经典的基于梯度的优化方法，以更具计算可行性的方式找到问题的解。 关键概念二次无约束">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-01-17T14:41:04.138Z">
-<meta property="article:modified_time" content="2025-01-17T14:41:04.138Z">
+<meta property="article:published_time" content="2025-02-10T11:22:59.493Z">
+<meta property="article:modified_time" content="2025-02-10T11:25:18.606Z">
 <meta property="article:author" content="Felix">
 <meta property="article:tag" content="Quantum algorithm, Physics">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2025/01/17/hello-world/">
+<link rel="canonical" href="http://example.com/2025/02/10/lqa/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Hello World | Felix's Blog</title>
+  <title>Local quantum annealing | Felix's Blog</title>
   
 
 
@@ -171,7 +171,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/10/lqa/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/felix.png">
@@ -184,7 +184,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          Local quantum annealing
         </h1>
 
         <div class="post-meta">
@@ -193,8 +193,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2025-01-17 22:41:04" itemprop="dateCreated datePublished" datetime="2025-01-17T22:41:04+08:00">2025-01-17</time>
+              <time title="Created: 2025-02-10 19:22:59 / Modified: 19:25:18" itemprop="dateCreated datePublished" datetime="2025-02-10T19:22:59+08:00">2025-02-10</time>
             </span>
 
           <br>
@@ -203,14 +204,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>738</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -222,19 +223,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Local-Quantum-Annealing-LQA-算法"><a href="#Local-Quantum-Annealing-LQA-算法" class="headerlink" title="Local Quantum Annealing (LQA) 算法"></a>Local Quantum Annealing (LQA) 算法</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><strong>Local Quantum Annealing (LQA)</strong> 是一种经典算法，受量子退火技术启发，用于解决组合优化问题。该方法专门针对 <strong>二次无约束二进制优化 (QUBO)</strong> 问题，这类问题因其寻找最优解的复杂性而广受关注。与传统的量子退火不同，LQA采用经典的基于梯度的优化方法，以更具计算可行性的方式找到问题的解。</p>
+<h2 id="关键概念"><a href="#关键概念" class="headerlink" title="关键概念"></a>关键概念</h2><h3 id="二次无约束二进制优化-QUBO"><a href="#二次无约束二进制优化-QUBO" class="headerlink" title="二次无约束二进制优化 (QUBO)"></a>二次无约束二进制优化 (QUBO)</h3><p>QUBO 是一种优化问题，目标是找到一个二进制字符串，使其最小化其元素的二次函数。由于 QUBO 问题可以映射到 <strong>Ising 模型</strong>，因此它们也非常适合量子计算。</p>
+<h3 id="量子退火"><a href="#量子退火" class="headerlink" title="量子退火"></a>量子退火</h3><p>量子退火是一种量子计算技术，通过将量子态演化到能量函数的基态来解决优化问题。在 LQA 中，这一概念被借鉴并采用经典的梯度下降方法来替代量子态的时间依赖性演化。</p>
+<h2 id="Local-Quantum-Annealing-方法"><a href="#Local-Quantum-Annealing-方法" class="headerlink" title="Local Quantum Annealing 方法"></a>Local Quantum Annealing 方法</h2><p>LQA 是基于量子退火框架的，但它用 <strong>动量加速的梯度下降</strong> 替代了量子态的演化。该算法在一个限制的量子积态子集上优化时变的代价函数，这些积态足以包含问题的解。通过保持在这些低能量积态空间内，LQA 在不需要指数级存储量子态的情况下，近似了量子退火过程，使其适用于大规模问题。</p>
+<h3 id="LQA-算法的关键步骤："><a href="#LQA-算法的关键步骤：" class="headerlink" title="LQA 算法的关键步骤："></a>LQA 算法的关键步骤：</h3><ol>
+<li><strong>初始设置</strong>：设定一个从 Ising 模型哈密顿量派生的代价函数。问题被编码为量子积态。</li>
+<li><strong>优化过程</strong>：计算代价函数的梯度，并使用动量加速的梯度下降技术进行优化。</li>
+<li><strong>迭代更新</strong>：在每个优化步骤中更新参数，向局部最小值移动。</li>
+<li><strong>最终解</strong>：通过优化后的参数恢复对应的二进制字符串解。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># LQA算法伪代码</span></span><br><span class="line">数据: J ∈ Rn×n: 对称Ising矩阵； w0 ∈ Rn: 初始权重； N : 总步数</span><br><span class="line"></span><br><span class="line">初始化 w = w0;</span><br><span class="line">对于 i = <span class="number">1</span>, · · · , N 执行：</span><br><span class="line">    w ← g(w,∇Cw(w, i/N))  <span class="comment"># 根据梯度更新权重</span></span><br><span class="line">结束</span><br><span class="line">返回 sign(w)  <span class="comment"># 根据优化后的权重返回最终解</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="LQA的基准测试"><a href="#LQA的基准测试" class="headerlink" title="LQA的基准测试"></a>LQA的基准测试</h2><p>LQA 已经与其他经典方法如 <strong>模拟分叉算法 (SB)</strong> 和 <strong>模拟相干 Ising 机器 (SIM-CIM)</strong> 进行了基准测试。性能的评估通过比较这些方法在已知解的 QUBO 问题中的代价函数最小化效果来进行。</p>
+<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><ul>
+<li>LQA 的表现与最先进的方法相当，特别是使用动量加速的梯度下降显著提高了性能。</li>
+<li>使用 <strong>GPU</strong> 或 <strong>FPGA</strong> 等专用硬件加速矩阵向量乘法，可以显著提高大规模问题的计算效率。</li>
+</ul>
 
     </div>
 
@@ -249,11 +254,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2025/02/10/lqa/" rel="next" title="Local quantum annealing">
-      Local quantum annealing <i class="fa fa-chevron-right"></i>
+    <a href="/2025/01/17/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -312,7 +317,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Local-Quantum-Annealing-LQA-%E7%AE%97%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">Local Quantum Annealing (LQA) 算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E6%A6%82%E5%BF%B5"><span class="nav-number">1.2.</span> <span class="nav-text">关键概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E6%AC%A1%E6%97%A0%E7%BA%A6%E6%9D%9F%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%BC%98%E5%8C%96-QUBO"><span class="nav-number">1.2.1.</span> <span class="nav-text">二次无约束二进制优化 (QUBO)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E9%80%80%E7%81%AB"><span class="nav-number">1.2.2.</span> <span class="nav-text">量子退火</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Local-Quantum-Annealing-%E6%96%B9%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">Local Quantum Annealing 方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LQA-%E7%AE%97%E6%B3%95%E7%9A%84%E5%85%B3%E9%94%AE%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="nav-number">1.3.1.</span> <span class="nav-text">LQA 算法的关键步骤：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LQA%E7%9A%84%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95"><span class="nav-number">1.4.</span> <span class="nav-text">LQA的基准测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C%EF%BC%9A"><span class="nav-number">1.4.1.</span> <span class="nav-text">结果：</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
