@@ -4,9 +4,36 @@
   
     
     <entry>
-      <title>物理随笔1 -- 从求解基态角度出发联系几门物理课程</title>
+      <title>物理随笔1 -- 从求解基态角度出发联系统计力学和优化问题 // Physics Gossip 1 – Relating Statistical Mechanics and Optimization Problems from the Perspective of Solving the Ground State</title>
       <link href="/2025/02/12/physics_gossip/"/>
       <url>/2025/02/12/physics_gossip/</url>
+      
+        <content type="html"><![CDATA[<p>我们生活中的许多问题实际上可以映射到一个解空间中。在这个空间里，问题的每一种配置（config）都有一个对应的能量值。求解问题的过程，就像是在波涛汹涌的大海上驾驶一艘小船，目标是找到那个能量值的全局最小值，也就是海面上最低的地方。</p><p>Many problems in our lives can be mapped onto a solution space. In this space, each configuration (config) of the problem corresponds to a specific energy value. Solving the problem is akin to navigating a small boat across a choppy sea, where the goal is to find the global minimum of the energy, the lowest point on the water’s surface. </p><hr><p>能量景观描绘了一个物理系统所有可能的微观状态（或称配置）以及每个状态对应的能量值。在这个景观中，系统的状态空间由不同的配置组成，每一个配置都有一个特定的能量值与之相联系。可以把它想象成一幅起伏的山脉图，山脊代表着能量较高的状态，而山谷则是能量较低的区域。系统的演化过程，实际上就是在这座山脉中寻找最低谷的过程——即寻找最低的能量状态。</p><p>The energy landscape describes all possible microstates (or configurations) of a physical system and their corresponding energy values. In this landscape, the system’s state space consists of various configurations, each associated with a specific energy value. One can imagine this as a mountainous terrain, where the peaks represent high-energy states, and the valleys correspond to regions of lower energy. The system’s evolution is essentially the process of navigating this landscape, seeking the lowest valley—the state of minimal energy.</p><p><img src="/images/gossip1/landscape1.png" alt="landscape1"></p><p><img src="/images/gossip1/landscape2.png" alt="landscape2"></p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Physics </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> physics </tag>
+            
+            <tag> gossip </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>物理随笔2 -- 物理，计算机理论之间的联系</title>
+      <link href="/2025/02/12/physics_gossip_2/"/>
+      <url>/2025/02/12/physics_gossip_2/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -60,33 +87,6 @@
     
     
     <entry>
-      <title>Math meme</title>
-      <link href="/2025/02/10/math-meme/"/>
-      <url>/2025/02/10/math-meme/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Meme-Image"><a href="#Meme-Image" class="headerlink" title="Meme Image"></a>Meme Image</h1><p>Funny memes</p><h2 id="Probability-theory"><a href="#Probability-theory" class="headerlink" title="Probability theory"></a>Probability theory</h2><p>Relationships after learning probs </p><p><img src="/images/meme/prob.png" alt="Funny Meme"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> meme </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> fun </tag>
-            
-            <tag> math </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>CS meme</title>
       <link href="/2025/02/10/cs-meme/"/>
       <url>/2025/02/10/cs-meme/</url>
@@ -106,6 +106,33 @@
             <tag> fun </tag>
             
             <tag> cs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Math meme</title>
+      <link href="/2025/02/10/math-meme/"/>
+      <url>/2025/02/10/math-meme/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Meme-Image"><a href="#Meme-Image" class="headerlink" title="Meme Image"></a>Meme Image</h1><p>Funny memes</p><h2 id="Probability-theory"><a href="#Probability-theory" class="headerlink" title="Probability theory"></a>Probability theory</h2><p>Relationships after learning probs </p><p><img src="/images/meme/prob.png" alt="Funny Meme"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> meme </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> fun </tag>
+            
+            <tag> math </tag>
             
         </tags>
       
