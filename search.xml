@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>物理随笔1 -- 从求解基态角度出发联系几门物理课程</title>
+      <link href="/2025/02/12/physics_gossip/"/>
+      <url>/2025/02/12/physics_gossip/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Physics </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> physics </tag>
+            
+            <tag> gossip </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Math and Physics meme</title>
       <link href="/2025/02/10/Math-and-Physics-meme/"/>
       <url>/2025/02/10/Math-and-Physics-meme/</url>
@@ -25,33 +52,6 @@
             <tag> math </tag>
             
             <tag> physics </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CS meme</title>
-      <link href="/2025/02/10/cs-meme/"/>
-      <url>/2025/02/10/cs-meme/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Meme-Image"><a href="#Meme-Image" class="headerlink" title="Meme Image"></a>Meme Image</h1><p>Funny memes</p><hr><p><img src="/images/meme/cat.png" alt="Cat Meme"></p><hr><p><img src="/images/meme/everything.png" alt="Everything Meme"></p><hr><p><img src="/images/meme/firefox1.png" alt="Firefox Meme 1"></p><hr><p><img src="/images/meme/firefox2.png" alt="Firefox Meme 2"></p><hr><p>Enjoy these memes!</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> meme </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> fun </tag>
-            
-            <tag> cs </tag>
             
         </tags>
       
@@ -87,23 +87,25 @@
     
     
     <entry>
-      <title>Local quantum annealing</title>
-      <link href="/2025/02/10/lqa/"/>
-      <url>/2025/02/10/lqa/</url>
+      <title>CS meme</title>
+      <link href="/2025/02/10/cs-meme/"/>
+      <url>/2025/02/10/cs-meme/</url>
       
-        <content type="html"><![CDATA[<h1 id="Local-Quantum-Annealing-LQA-算法"><a href="#Local-Quantum-Annealing-LQA-算法" class="headerlink" title="Local Quantum Annealing (LQA) 算法"></a>Local Quantum Annealing (LQA) 算法</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><strong>Local Quantum Annealing (LQA)</strong> 是一种经典算法，受量子退火技术启发，用于解决组合优化问题。该方法专门针对 <strong>二次无约束二进制优化 (QUBO)</strong> 问题，这类问题因其寻找最优解的复杂性而广受关注。与传统的量子退火不同，LQA采用经典的基于梯度的优化方法，以更具计算可行性的方式找到问题的解。</p><h2 id="关键概念"><a href="#关键概念" class="headerlink" title="关键概念"></a>关键概念</h2><h3 id="二次无约束二进制优化-QUBO"><a href="#二次无约束二进制优化-QUBO" class="headerlink" title="二次无约束二进制优化 (QUBO)"></a>二次无约束二进制优化 (QUBO)</h3><p>QUBO 是一种优化问题，目标是找到一个二进制字符串，使其最小化其元素的二次函数。由于 QUBO 问题可以映射到 <strong>Ising 模型</strong>，因此它们也非常适合量子计算。</p><h3 id="量子退火"><a href="#量子退火" class="headerlink" title="量子退火"></a>量子退火</h3><p>量子退火是一种量子计算技术，通过将量子态演化到能量函数的基态来解决优化问题。在 LQA 中，这一概念被借鉴并采用经典的梯度下降方法来替代量子态的时间依赖性演化。</p><h2 id="Local-Quantum-Annealing-方法"><a href="#Local-Quantum-Annealing-方法" class="headerlink" title="Local Quantum Annealing 方法"></a>Local Quantum Annealing 方法</h2><p>LQA 是基于量子退火框架的，但它用 <strong>动量加速的梯度下降</strong> 替代了量子态的演化。该算法在一个限制的量子积态子集上优化时变的代价函数，这些积态足以包含问题的解。通过保持在这些低能量积态空间内，LQA 在不需要指数级存储量子态的情况下，近似了量子退火过程，使其适用于大规模问题。</p><h3 id="LQA-算法的关键步骤："><a href="#LQA-算法的关键步骤：" class="headerlink" title="LQA 算法的关键步骤："></a>LQA 算法的关键步骤：</h3><ol><li><strong>初始设置</strong>：设定一个从 Ising 模型哈密顿量派生的代价函数。问题被编码为量子积态。</li><li><strong>优化过程</strong>：计算代价函数的梯度，并使用动量加速的梯度下降技术进行优化。</li><li><strong>迭代更新</strong>：在每个优化步骤中更新参数，向局部最小值移动。</li><li><strong>最终解</strong>：通过优化后的参数恢复对应的二进制字符串解。</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># LQA算法伪代码</span></span><br><span class="line">数据: J ∈ Rn×n: 对称Ising矩阵； w0 ∈ Rn: 初始权重； N : 总步数</span><br><span class="line"></span><br><span class="line">初始化 w = w0;</span><br><span class="line">对于 i = <span class="number">1</span>, · · · , N 执行：</span><br><span class="line">    w ← g(w,∇Cw(w, i/N))  <span class="comment"># 根据梯度更新权重</span></span><br><span class="line">结束</span><br><span class="line">返回 sign(w)  <span class="comment"># 根据优化后的权重返回最终解</span></span><br></pre></td></tr></table></figure><h2 id="LQA的基准测试"><a href="#LQA的基准测试" class="headerlink" title="LQA的基准测试"></a>LQA的基准测试</h2><p>LQA 已经与其他经典方法如 <strong>模拟分叉算法 (SB)</strong> 和 <strong>模拟相干 Ising 机器 (SIM-CIM)</strong> 进行了基准测试。性能的评估通过比较这些方法在已知解的 QUBO 问题中的代价函数最小化效果来进行。</p><h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><ul><li>LQA 的表现与最先进的方法相当，特别是使用动量加速的梯度下降显著提高了性能。</li><li>使用 <strong>GPU</strong> 或 <strong>FPGA</strong> 等专用硬件加速矩阵向量乘法，可以显著提高大规模问题的计算效率。</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Meme-Image"><a href="#Meme-Image" class="headerlink" title="Meme Image"></a>Meme Image</h1><p>Funny memes</p><hr><p><img src="/images/meme/cat.png" alt="Cat Meme"></p><hr><p><img src="/images/meme/everything.png" alt="Everything Meme"></p><hr><p><img src="/images/meme/firefox1.png" alt="Firefox Meme 1"></p><hr><p><img src="/images/meme/firefox2.png" alt="Firefox Meme 2"></p><hr><p>Enjoy these memes!</p>]]></content>
       
       
       <categories>
           
-          <category> Math </category>
+          <category> meme </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Quantum algorithms </tag>
+            <tag> fun </tag>
+            
+            <tag> cs </tag>
             
         </tags>
       
